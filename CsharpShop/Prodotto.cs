@@ -45,7 +45,7 @@ namespace CsharpShop
         public double CalcolaPrezzoIva() 
         {
 
-            double prezzoConIva = prezzo * 0.22;
+            double prezzoConIva = prezzo * 1.22;
             return prezzoConIva;
 
         }
@@ -56,6 +56,25 @@ namespace CsharpShop
 
             string nomePiuCodice = nomeProdotto + " " + GeneraCodiceProdotto();
             return nomePiuCodice;
+
+        }
+
+        //------------ METODO 4 STAMPA DATI ---------------
+        public void StampaDati()
+        {
+
+            Console.WriteLine("BENVENUTI NEL NOSTRO E-COMMERCE" + "\n");
+            Console.WriteLine("------- I NOSTRI PRODOTTI -------");
+            Console.WriteLine("Prodotto: " + NomeEsteso());
+            Console.WriteLine("---------------------------------" + "\n");
+            Console.WriteLine("-----------DESCRIZIONE-----------");
+            Console.WriteLine(descrizione);
+            Console.WriteLine("---------------------------------" + "\n");
+            Console.WriteLine("-------------COSTI---------------");
+            Console.WriteLine("Prezzo senza iva: " + prezzo);
+            Console.WriteLine("Prezzo calcolato con iva: " + CalcolaPrezzoIva());
+            Console.WriteLine("---------------------------------");
+
 
         }
 
