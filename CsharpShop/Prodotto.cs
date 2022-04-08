@@ -30,7 +30,7 @@ namespace CsharpShop
 
         //-------------- METODO 1 CREAZIONE CODICE -------------
 
-        public int GeneraCodiceProdotto()
+        public int GetGeneraCodiceProdotto()
         {
 
             Random random = new Random();
@@ -42,7 +42,7 @@ namespace CsharpShop
 
         //------------ METODO 2 CALCOLA PREZZO CON IVA ------------
 
-        public double CalcolaPrezzoIva() 
+        public double GetCalcolaPrezzoIva() 
         {
 
             double prezzoConIva = prezzo * 1.22;
@@ -51,10 +51,10 @@ namespace CsharpShop
         }
 
         //----------- METODO 3 STAMPA NOME ESTESO ----------
-        public string NomeEsteso()
+        public string GetNomeEsteso()
         {
 
-            string nomePiuCodice = nomeProdotto + " " + GeneraCodiceProdotto();
+            string nomePiuCodice = nomeProdotto + " " + GetGeneraCodiceProdotto();
             return nomePiuCodice;
 
         }
@@ -65,15 +65,16 @@ namespace CsharpShop
 
             Console.WriteLine("BENVENUTI NEL NOSTRO E-COMMERCE" + "\n");
             Console.WriteLine("------- I NOSTRI PRODOTTI -------");
-            Console.WriteLine("Prodotto: " + NomeEsteso());
+            Console.WriteLine("Prodotto: " + GetNomeEsteso());
             Console.WriteLine("---------------------------------" + "\n");
             Console.WriteLine("-----------DESCRIZIONE-----------");
             Console.WriteLine(descrizione);
             Console.WriteLine("---------------------------------" + "\n");
             Console.WriteLine("-------------COSTI---------------");
             Console.WriteLine("Prezzo senza iva: " + prezzo);
-            Console.WriteLine("Prezzo calcolato con iva: " + CalcolaPrezzoIva());
-            Console.WriteLine("---------------------------------");
+            Console.WriteLine("Prezzo calcolato con iva: " + GetCalcolaPrezzoIva());
+            Console.WriteLine(".................................");
+            Console.WriteLine("\n" + "\n");
 
 
         }

@@ -5,6 +5,10 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpShop", "CsharpShop\CsharpShop.csproj", "{2B6B1B6F-E906-42A3-8190-EA08F498947D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geometria", "..\Geometria\Geometria\Geometria.csproj", "{9CDF11E5-1CBD-4CE0-A41E-C85D67342B74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiveCoding4", "..\LiveCoding4\LiveCoding4\LiveCoding4.csproj", "{BAE28794-DD23-4184-8334-38DDEFF3FD1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{2B6B1B6F-E906-42A3-8190-EA08F498947D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B6B1B6F-E906-42A3-8190-EA08F498947D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B6B1B6F-E906-42A3-8190-EA08F498947D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CDF11E5-1CBD-4CE0-A41E-C85D67342B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDF11E5-1CBD-4CE0-A41E-C85D67342B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDF11E5-1CBD-4CE0-A41E-C85D67342B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDF11E5-1CBD-4CE0-A41E-C85D67342B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE28794-DD23-4184-8334-38DDEFF3FD1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE28794-DD23-4184-8334-38DDEFF3FD1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE28794-DD23-4184-8334-38DDEFF3FD1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE28794-DD23-4184-8334-38DDEFF3FD1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
