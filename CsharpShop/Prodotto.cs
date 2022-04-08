@@ -14,11 +14,11 @@ namespace CsharpShop
         private int codiceProdotto;
         private string nomeProdotto;
         private string descrizione;
-        private float prezzo;
-        private float iva;
+        private double prezzo;
+        private string iva;
 
     //---------- COSTRUTTORE --------------
-    public Prodotto (string nomeProdotto , string descrizione , float prezzo , float iva)
+    public Prodotto (string nomeProdotto , string descrizione , double prezzo , string iva)
         {
 
             this.nomeProdotto = nomeProdotto;
@@ -30,7 +30,7 @@ namespace CsharpShop
 
         //-------------- METODO 1 CREAZIONE CODICE -------------
 
-        public int generaCodiceProdotto()
+        public int GeneraCodiceProdotto()
         {
 
             Random random = new Random();
@@ -40,12 +40,24 @@ namespace CsharpShop
 
         }
 
-        public void stampa()
+        //------------ METODO 2 CALCOLA PREZZO CON IVA ------------
+
+        public double CalcolaPrezzoIva() 
         {
-            Console.WriteLine(generaCodiceProdotto());
+
+            double prezzoConIva = prezzo * 0.22;
+            return prezzoConIva;
+
         }
 
-        
+        //----------- METODO 3 STAMPA NOME ESTESO ----------
+        public string NomeEsteso()
+        {
+
+            string nomePiuCodice = nomeProdotto + " " + GeneraCodiceProdotto();
+            return nomePiuCodice;
+
+        }
 
     }
 }
